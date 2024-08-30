@@ -36,17 +36,18 @@ $(".title_investment").click(function () {
   } else if ($(this).index() === 1) {
     $(".right_title_investment").css(
       "background-image",
-      "url(../Atbank/img/bgso2.png)"
+      "url(https://atbank.com.vn/images/articles/2023/05/29/picture1-626.png)"
     );
   } else if ($(this).index() === 2) {
+    cl;
     $(".right_title_investment").css(
       "background-image",
-      "url(../Atbank/img/bgso3.png)"
+      "url(https://atbank.com.vn/images/articles/2023/05/25/quy-mo-la-gi-co-nen-dau-tu-quy-mo-hay-khong-1200x800-1-45.jpg)"
     );
   } else {
     $(".right_title_investment").css(
       "background-image",
-      "url(../Atbank/img/bgso4.jpg)"
+      "url(https://atbank.com.vn/images/articles/2023/05/25/screenshot-1685001969-764.png)"
     );
   }
   $(".card_investment").find(".card_name").text($(this).find("h5").text());
