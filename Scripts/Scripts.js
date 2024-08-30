@@ -31,7 +31,7 @@ $(".title_investment").click(function () {
   if ($(this).index() === 0) {
     $(".right_title_investment").css(
       "background-image",
-      "url(../Atbank/img/bgso1.png)"
+      "url(https://atbank.com.vn/images/articles/2023/05/25/screenshot-1684999372-733.png)"
     );
   } else if ($(this).index() === 1) {
     $(".right_title_investment").css(
