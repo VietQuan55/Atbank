@@ -365,7 +365,14 @@ p {
   }
 }
 .new_info_card {
+  border: 1px solid transparent;
   margin: 0px 10px;
+  &:hover {
+    img {
+      transform: scale(1.01);
+      transition: all 1s;
+    }
+  }
   img {
     width: 100%;
     aspect-ratio: 7/5;
@@ -373,6 +380,11 @@ p {
     border-radius: 10px;
   }
   .name_card_new {
+    &:hover {
+      a {
+        color: $sky;
+      }
+    }
     a {
       display: -webkit-box;
       -webkit-line-clamp: 2;
@@ -427,6 +439,11 @@ p {
   }
 
   .Name_mini_new {
+    &:hover {
+      a {
+        color: $sky;
+      }
+    }
     a {
       text-decoration: none;
       font-weight: bold;
@@ -476,11 +493,7 @@ p {
   align-items: center;
   background-color: white;
   border-radius: 10px;
-  &:hover {
-    img {
-      transform: scale(1.2);
-    }
-  }
+
   img {
     width: 80%;
     margin: auto;
@@ -1284,7 +1297,7 @@ p {
 .hr_dot {
   width: 80%;
   border-bottom: 2px dashed $sky;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .bnt_see_boss {
   border-radius: 20px;
@@ -1378,8 +1391,8 @@ p {
   }
 }
 .img_box_contact {
+  margin-top: -20%;
   width: 90%;
-  position: absolute;
   z-index: 10;
   top: -20%;
   img {
@@ -1426,6 +1439,13 @@ p {
     border: 1px solid gray;
     border-radius: 10px;
     margin-bottom: 40px;
+    &:hover {
+      border: 1px solid $sky;
+      img {
+        transform: scale(1.2);
+        transition: all 1s;
+      }
+    }
   }
 }
 .card_work {
@@ -1482,9 +1502,11 @@ p {
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
-
+  &:hover {
+    background-color: $blue;
+  }
   img {
-    width: 60%;
+    width: 100%;
     object-fit: contain;
     aspect-ratio: 1;
   }
@@ -1541,7 +1563,6 @@ p {
   }
 }
 .map_box {
-  background-color: whitesmoke;
   padding: 20px;
   a {
     text-decoration: none;
