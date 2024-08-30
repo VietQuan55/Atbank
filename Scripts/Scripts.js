@@ -31,7 +31,7 @@ $(".title_investment").click(function () {
   if ($(this).index() === 0) {
     $(".right_title_investment").css(
       "background-image",
-      'url("../img/Rectangle 514.png")'
+      'url("../img/anh.png")'
     );
   } else if ($(this).index() === 1) {
     $(".right_title_investment").css(
