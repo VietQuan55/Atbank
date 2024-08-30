@@ -31,22 +31,22 @@ $(".title_investment").click(function () {
   if ($(this).index() === 0) {
     $(".right_title_investment").css(
       "background-image",
-      'url("../img/Rectangle 514.png")'
+      "url(../img/bgso1.png)"
     );
   } else if ($(this).index() === 1) {
     $(".right_title_investment").css(
       "background-image",
-      'url("../img/Rectangle 328.png")'
+      "url(../img/bgso2.png)"
     );
   } else if ($(this).index() === 2) {
     $(".right_title_investment").css(
       "background-image",
-      'url("../img/Rectangle 1215 (3).jpg")'
+      "url(../img/bgso3.png)"
     );
   } else {
     $(".right_title_investment").css(
       "background-image",
-      'url("../img/Rectangle 375.jpg")'
+      "url(../img/bgso4.jpg)"
     );
   }
   $(".card_investment").find(".card_name").text($(this).find("h5").text());
