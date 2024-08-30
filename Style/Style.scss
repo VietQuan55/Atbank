@@ -469,12 +469,18 @@ p {
   }
 }
 .iteam_partner {
+  overflow: hidden;
   margin: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: white;
   border-radius: 10px;
+  &:hover {
+    img {
+      transform: scale(1.2);
+    }
+  }
   img {
     width: 80%;
     margin: auto;
@@ -1242,7 +1248,7 @@ p {
   margin: 20px auto;
   border-radius: 10px;
   box-shadow: #fff;
-  h1 {
+  h3 {
     text-wrap: nowrap;
     border-left: 5px solid $blue;
     color: $blue;
@@ -1294,7 +1300,7 @@ p {
 .card_boss {
   padding: 10px;
   p {
-    padding: 10px;
+    padding: 0px 10px;
   }
 }
 .body_investment {
