@@ -31,22 +31,22 @@ $(".title_investment").click(function () {
   if ($(this).index() === 0) {
     $(".right_title_investment").css(
       "background-image",
-      "url(../img/bgso1.png)"
+      "url(../Atbank/img/bgso1.png)"
     );
   } else if ($(this).index() === 1) {
     $(".right_title_investment").css(
       "background-image",
-      "url(../img/bgso2.png)"
+      "url(../Atbank/img/bgso2.png)"
     );
   } else if ($(this).index() === 2) {
     $(".right_title_investment").css(
       "background-image",
-      "url(../img/bgso3.png)"
+      "url(../Atbank/img/bgso3.png)"
     );
   } else {
     $(".right_title_investment").css(
       "background-image",
-      "url(../img/bgso4.jpg)"
+      "url(../Atbank/img/bgso4.jpg)"
     );
   }
   $(".card_investment").find(".card_name").text($(this).find("h5").text());
