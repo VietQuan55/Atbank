@@ -39,10 +39,9 @@ $(".title_investment").click(function () {
       "url(https://atbank.com.vn/images/articles/2023/05/29/picture1-626.png)"
     );
   } else if ($(this).index() === 2) {
-    cl;
     $(".right_title_investment").css(
       "background-image",
-      "url(../img/banner2.jpg)"
+      "url(https://atbank.com.vn/images/articles/2023/05/25/quy-mo-la-gi-co-nen-dau-tu-quy-mo-hay-khong-1200x800-1-45.jpg)"
     );
   } else {
     $(".right_title_investment").css(
