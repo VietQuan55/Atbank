@@ -42,7 +42,7 @@ $(".title_investment").click(function () {
     cl;
     $(".right_title_investment").css(
       "background-image",
-      "url(https://tttctt.1cdn.vn/2023/09/08/viet-nam.jpg)"
+      "url(../img/banner2.jpg)"
     );
   } else {
     $(".right_title_investment").css(
