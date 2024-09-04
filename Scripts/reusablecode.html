@@ -1,0 +1,608 @@
+<top_html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index</title>
+    <link rel="stylesheet" href="./Font_awesome/css/all.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./Style/Style.css" />
+    <link rel="stylesheet" href="./Style/Reponsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+</top_html>
+
+<bot_html>
+    <script type="text/javascript" src="./Scripts/Scripts.js"></script>
+  </body>
+</html>
+</bot_html>
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+<CSS_Frist>
+    <style>
+        /*color*/
+$colorMain: #232C6E;
+$colorMain2: #26B0CD;
+$white: #fff;
+$black: #000;
+$blur: #7991ad70;
+$colorblur: #9B9B9B;
+$background-linear: linear-gradient(90deg, #27C3E3 0%, #267DCD 102.4%);
+        
+@mixin maxWidth($value) {
+    @media (max-width: $value) {
+        @content;
+    }
+}
+
+@mixin before_bg {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+}
+
+
+@mixin item-center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin v-center {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@mixin h-center {
+    left: 50%;
+    transform: translateX(-50%);
+}
+        @font-face {
+  font-family: Roboto;
+  src: url(../Font_awesome/RobotoCondensed-Regular.ttf);
+  font-weight: 400;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+.flex-item-center {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.flex-item-between{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 10rem;
+}
+.container {
+    max-width: 1300px;
+
+    @include maxWidth(1366px) {
+        max-width: 1230px;
+    }
+
+    @include maxWidth(1100px) {
+        max-width: 1090px;
+    }
+
+    @include maxWidth(768px) {
+        max-width: 764px;
+    }
+}
+
+.share {
+    li {
+        list-style: none;
+    }
+
+    button {
+        border: 0;
+        margin: 0 5px;
+        width: 30px;
+        height: 30px;
+        color: $white;
+        background: #3b5998;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .instagram {
+        background: linear-gradient(45deg,#f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    }
+
+    .twitter {
+        background: #1DA1F2;
+    }
+
+    .linkedin {
+        background: #0e76a8;
+    }
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+.ul-reset {
+    padding: 0;
+    margin: 0;
+
+    li {
+        list-style: none;
+    }
+}
+button {
+    outline: none;
+    border: 0;
+    background: none;
+}
+input {
+    border: 0;
+    outline: none;
+}
+.line-clamp-2{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-break: break-word;
+    -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-height: 1.2; 
+  height: calc(2 * 1.2em); 
+}
+.line-clamp-3{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-break: break-word;
+    -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-height: 1.2; 
+  height: calc(3 * 1.2em); 
+}
+.line-clamp-4{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-break: break-word;
+    -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  line-height: 1.2; 
+  height: calc(4 * 1.2em); 
+}
+
+    </style>
+</CSS_Frist>
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+<back_to_top>
+    <div class="back_to_top">
+        <a href="#"> <i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+      </div>
+      <style>
+      .back_to_top {
+        position: fixed;
+        bottom: 30px;
+        right: 20px;
+      
+        a {
+          text-decoration: none;
+          color: white;
+          width: 50px;
+          aspect-ratio: 1;
+          background-image: linear-gradient(
+            90deg,
+            rgb(39, 195, 227) 0%,
+            rgb(38, 125, 205) 102.4%
+          );
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 20;
+        }
+      }
+      </style>
+      <script> $(window).scroll(function () {
+        var e = $(window).scrollTop();
+        if (e > 300) {
+          $(".back_to_top").show();
+        } else {
+          $(".back_to_top").hide();
+        }
+      });</script>
+
+     
+</back_to_top>
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+<phone_ring>
+    <html>
+        <a
+        href="tel:0988695524"
+        class="suntory-alo-phone suntory-alo-green"
+        id="suntory-alo-phoneIcon"
+        style="left: 0px; bottom: -20px; text-decoration: none"
+      >
+        <div class="suntory-alo-ph-circle"></div>
+        <div class="suntory-alo-ph-circle-fill"></div>
+        <div class="suntory-alo-ph-img-circle"><i class="fa fa-phone"></i></div>
+        <div class="tel"><p class="fone">0988.695.524</p></div>
+      </a>
+    </html>
+    <style>
+    .suntory-alo-phone {
+        background-color: transparent;
+        cursor: pointer;
+        height: 120px;
+        position: fixed;
+        transition: visibility 0.5s ease 0s;
+        width: 120px;
+        z-index: 200;
+      }
+      .suntory-alo-ph-circle {
+        animation: 1.2s ease-in-out 0s normal none infinite running
+          suntory-alo-circle-anim;
+        background-color: transparent;
+        border: 2px solid rgba(30, 30, 30, 0.4);
+        border-radius: 100%;
+        height: 100px;
+        left: 0px;
+        opacity: 0.1;
+        position: absolute;
+        top: 0px;
+        transform-origin: 50% 50% 0;
+        transition: all 0.5s ease 0s;
+        width: 100px;
+      }
+      .suntory-alo-ph-circle-fill {
+        animation: 2.3s ease-in-out 0s normal none infinite running
+          suntory-alo-circle-fill-anim;
+        border: 2px solid transparent;
+        border-radius: 100%;
+        height: 70px;
+        left: 15px;
+        position: absolute;
+        top: 15px;
+        transform-origin: 50% 50% 0;
+        transition: all 0.5s ease 0s;
+        width: 70px;
+      }
+      .suntory-alo-ph-img-circle {
+        border: 2px solid transparent;
+        border-radius: 100%;
+        height: 50px;
+        left: 25px;
+        opacity: 0.7;
+        position: absolute;
+        top: 25px;
+        transform-origin: 50% 50% 0;
+        width: 50px;
+        text-align: center;
+      }
+      .suntory-alo-phone.suntory-alo-hover,
+      .suntory-alo-phone:hover {
+        opacity: 1;
+      }
+      .suntory-alo-phone.suntory-alo-active .suntory-alo-ph-circle {
+        animation: 1.1s ease-in-out 0s normal none infinite running
+          suntory-alo-circle-anim !important;
+      }
+      .suntory-alo-phone.suntory-alo-static .suntory-alo-ph-circle {
+        animation: 2.2s ease-in-out 0s normal none infinite running
+          suntory-alo-circle-anim !important;
+      }
+      .suntory-alo-phone.suntory-alo-hover .suntory-alo-ph-circle,
+      .suntory-alo-phone:hover .suntory-alo-ph-circle {
+        border-color: #00aff2;
+        opacity: 0.5;
+      }
+      .suntory-alo-phone.suntory-alo-green.suntory-alo-hover .suntory-alo-ph-circle,
+      .suntory-alo-phone.suntory-alo-green:hover .suntory-alo-ph-circle {
+        border-color: green;
+        opacity: 1;
+      }
+      .suntory-alo-phone.suntory-alo-green .suntory-alo-ph-circle {
+        border-color: #bfebfc;
+        opacity: 1;
+      }
+      .suntory-alo-phone.suntory-alo-hover .suntory-alo-ph-circle-fill,
+      .suntory-alo-phone:hover .suntory-alo-ph-circle-fill {
+        background-color: rgba(0, 175, 242, 0.9);
+      }
+      .suntory-alo-phone.suntory-alo-green.suntory-alo-hover
+        .suntory-alo-ph-circle-fill,
+      .suntory-alo-phone.suntory-alo-green:hover .suntory-alo-ph-circle-fill {
+        background-color: green;
+      }
+      .suntory-alo-phone.suntory-alo-green .suntory-alo-ph-circle-fill {
+        background-color: rgba(0, 175, 242, 0.9);
+      }
+      .suntory-alo-phone.suntory-alo-hover .suntory-alo-ph-img-circle,
+      .suntory-alo-phone:hover .suntory-alo-ph-img-circle {
+        background-color: #00aff2;
+      }
+      .suntory-alo-phone.suntory-alo-green.suntory-alo-hover
+        .suntory-alo-ph-img-circle,
+      .suntory-alo-phone.suntory-alo-green:hover .suntory-alo-ph-img-circle {
+        background-color: green;
+      }
+      .suntory-alo-phone.suntory-alo-green .suntory-alo-ph-img-circle {
+        background-color: #00aff2;
+      }
+      @keyframes suntory-alo-circle-anim {
+        0% {
+          opacity: 0.1;
+          transform: rotate(0deg) scale(0.5) skew(1deg);
+        }
+        30% {
+          opacity: 0.5;
+          transform: rotate(0deg) scale(0.7) skew(1deg);
+        }
+        100% {
+          opacity: 0.6;
+          transform: rotate(0deg) scale(1) skew(1deg);
+        }
+      }
+      @keyframes suntory-alo-circle-img-anim {
+        0% {
+          transform: rotate(0deg) scale(1) skew(1deg);
+        }
+        10% {
+          transform: rotate(-25deg) scale(1) skew(1deg);
+        }
+        20% {
+          transform: rotate(25deg) scale(1) skew(1deg);
+        }
+        30% {
+          transform: rotate(-25deg) scale(1) skew(1deg);
+        }
+        40% {
+          transform: rotate(25deg) scale(1) skew(1deg);
+        }
+        50% {
+          transform: rotate(0deg) scale(1) skew(1deg);
+        }
+        100% {
+          transform: rotate(0deg) scale(1) skew(1deg);
+        }
+      }
+      @keyframes suntory-alo-circle-fill-anim {
+        0% {
+          opacity: 0.2;
+          transform: rotate(0deg) scale(0.7) skew(1deg);
+        }
+        50% {
+          opacity: 0.2;
+          transform: rotate(0deg) scale(1) skew(1deg);
+        }
+        100% {
+          opacity: 0.2;
+          transform: rotate(0deg) scale(0.7) skew(1deg);
+        }
+      }
+      .suntory-alo-ph-img-circle i {
+        animation: 1s ease-in-out 0s normal none infinite running
+          suntory-alo-circle-img-anim;
+        font-size: 30px;
+        line-height: 50px;
+        color: #fff;
+      }
+      @keyframes suntory-alo-ring-ring {
+        0% {
+          transform: rotate(0deg) scale(1) skew(1deg);
+        }
+        10% {
+          transform: rotate(-25deg) scale(1) skew(1deg);
+        }
+        20% {
+          transform: rotate(25deg) scale(1) skew(1deg);
+        }
+        30% {
+          transform: rotate(-25deg) scale(1) skew(1deg);
+        }
+        40% {
+          transform: rotate(25deg) scale(1) skew(1deg);
+        }
+        50% {
+          transform: rotate(0deg) scale(1) skew(1deg);
+        }
+        100% {
+          transform: rotate(0deg) scale(1) skew(1deg);
+        }
+      }
+      .tel {
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 30px;
+        height: 50px;
+        left: 26px;
+        overflow: hidden;
+        position: relative;
+        top: 26px;
+        width: max-content;
+        padding-right: 1rem;
+        z-index: -1;
+        text-decoration: none;
+      }
+      .fone {
+        color: #fff;
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 40px;
+        margin: 5px;
+        padding-left: 50px;
+      }
+      </style>
+
+
+</phone_ring>
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+<slick>
+    <script>
+        $(".list_feedback").slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true,
+    autoplay: true,
+    asNavFor: ".list_com_2",
+    autoplaySpeed: 3000,
+    focusOnSelect: true,
+    centerMode: true,
+    centerPadding: "0px",
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      
+    ],
+  });
+    </script>
+</slick>
+<cus_btn>
+    <script>
+         $(".list_feedback").slick({
+    prevArrow:
+        '<button class="slide-arrow prev-arrow  shadow"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>',
+    nextArrow:
+        '<button class="slide-arrow next-arrow  shadow"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>',
+         })       
+        </script>
+    <style>
+        .slide-arrow {
+position: absolute;
+top: 50%;
+border: none;
+font-size: 20px;
+border-radius: 50%;
+z-index: 10;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: white;
+}
+.prev-arrow {
+left: 0;
+width: 60px;
+height: 60px;
+transform: translate(-35%, -50%);
+}
+.next-arrow {
+right: 0;
+width: 60px;
+height: 60px;
+transform: translate(35%, -50%);
+}
+    </style>
+</cus_btn>
+
+<cus_dot>
+    <style>
+        .slick-dots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem 0;
+
+    list-style-type: none;
+
+    li {
+      margin: 0 0.25rem;
+    }
+
+    button {
+      display: block;
+      width: 1.5rem;
+      height: 1.5rem;
+      padding: 0;
+
+      border: 2px solid white;
+      border-radius: 100%;
+      background-color: transparent;
+
+      text-indent: -9999px;
+    }
+
+    li.slick-active button {
+      background-color: white;
+    }
+  }
+    </style>
+</cus_dot>
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+<text_change_resize>
+    <script>
+        $(window).resize(function () {
+  if ($(window).width() <= 1400) {
+    $(".bnt_visit").text("THAM QUAN");
+    $(".text_long").text("ĐẦU TƯ");
+  } else {
+    $(".bnt_visit").text("THAM QUAN ATBANK");
+    $(".text_long").text("LĨNH VỰC ĐẦU TƯ");
+  }
+});
+    </script>
+</text_change_resize>

@@ -42,7 +42,7 @@ $(".title_investment").click(function () {
     cl;
     $(".right_title_investment").css(
       "background-image",
-      "url(https://atbank.com.vn/images/articles/2023/05/25/quy-mo-la-gi-co-nen-dau-tu-quy-mo-hay-khong-1200x800-1-45.jpg)"
+      "url(https://tttctt.1cdn.vn/2023/09/08/viet-nam.jpg)"
     );
   } else {
     $(".right_title_investment").css(
@@ -210,6 +210,85 @@ $(window).scroll(function () {
     $(".back_to_top").hide();
   }
 });
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////translate////////////////////////////////////////////////////////
+$(".menu_translate a").click(function () {
+  var name = $(this).data("lang");
+  localStorage.setItem("leng", name);
+  console.log(name);
+  var storedLang = localStorage.getItem("leng");
+
+  if (storedLang) {
+    var selectedLink = $('.menu_translate a[data-lang="' + storedLang + '"]');
+    var imgSrc = selectedLink.find("img").attr("src");
+    var langText = selectedLink.text().trim();
+    $(".item-translate img").attr("src", imgSrc);
+    $(".item-translate span").text(storedLang);
+  } else {
+    $(".item-translate img").attr("src", "../img/anh.png");
+    $(".item-translate span").text("English");
+  }
+});
+function GTranslateFireEvent(a, b) {
+  try {
+    if (document.createEvent) {
+      var c = document.createEvent("HTMLEvents");
+      c.initEvent(b, true, true);
+      a.dispatchEvent(c);
+    } else {
+      var c = document.createEventObject();
+      a.fireEvent("on" + b, c);
+    }
+  } catch (e) {}
+}
+function doTranslate(a) {
+  const loadG = sessionStorage.getItem("loadGT");
+  if (loadG === null) {
+    $.getScript(
+      "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    );
+    sessionStorage.setItem("loadGT", 1);
+  }
+
+  if (a.value) a = a.value;
+  if (a === "") return;
+  const b = a.split("|")[1];
+  var c;
+  const d = document.getElementsByTagName("select");
+  for (let i = 0; i < d.length; i++)
+    if (d[i].className === "goog-te-combo") c = d[i];
+  if (
+    document.getElementById("google_translate_element2") === null ||
+    document.getElementById("google_translate_element2").innerHTML.length ===
+      0 ||
+    c.length === 0 ||
+    c.innerHTML.length === 0
+  ) {
+    setTimeout(function () {
+      doTranslate(a);
+    }, 500);
+  } else {
+    c.value = b;
+    GTranslateFireEvent(c, "change");
+    GTranslateFireEvent(c, "change");
+  }
+}
+function googleTranslateElementInit() {
+  const translateElement = new google.translate.TranslateElement(
+    {
+      pageLanguage: "en",
+      includedLanguages: "vi,en,zh-CN,de,fr,ja,ko,ru",
+      multilanguagePage: false,
+      autoDisplay: false,
+    },
+    "google_translate_element2"
+  );
+  $("#goog-gt-tt h1").remove();
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////
 
 AOS.init({
   offset: 0,
